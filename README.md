@@ -19,16 +19,19 @@ mmrotate == 0.3.2
 
 This project uses the following two datasets.
 
-| Dataset | Checkpoint | Test script | Config | mAP |
-|---|---|---|---|---|
-| HRSC2016 | `work_dirs/CEGA_HRSC.pth` | `tools/CEGA_HRSC_test.sh` | `experiments/ablation/CEGA_HRSC_config.py` | `90.80%` |
-| DOTA v1.0 | `work_dirs/CEGA_DOTA/CEGA_DOTA.pth` | `tools/CEGA_DOTA_test.sh` | `configs/strip_rcnn/CEGA_DOTA_config.py` | `87.85%` |
+| Dataset | Checkpoint | Download | Test script | Config | mAP |
+|---|---|---|---|---|---|
+| HRSC2016 | `work_dirs/CEGA_HRSC.pth` | [Google Drive](https://drive.google.com/file/d/1s5pOkjIgufcuBbfDuQkIjXjBCfc8zwxg/view?usp=drive_link) | `tools/CEGA_HRSC_test.sh` | `experiments/ablation/CEGA_HRSC_config.py` | `90.80%` |
+| DOTA v1.0 | `work_dirs/CEGA_DOTA/CEGA_DOTA.pth` | [Google Drive](https://drive.google.com/file/d/1h6GoFyKSDvI_xxGmi31IarjgUn04mp3O/view?usp=drive_link) | `tools/CEGA_DOTA_test.sh` | `configs/strip_rcnn/CEGA_DOTA_config.py` | `87.85%` |
+
+Download the checkpoint first and place it at the path shown in the table.
 
 ### 2.1 HRSC2016 Test
 
 Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:
 
 ```bash
+mkdir -p work_dirs
 export HRSC_ROOT=/path/to/hrsc
 export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
@@ -50,6 +53,7 @@ DOTA_ROOT/
 Run validation mAP from the PETDet root:
 
 ```bash
+mkdir -p work_dirs/CEGA_DOTA
 export DOTA_ROOT=/path/to/split_1024_dota1_0
 export CHECKPOINT="$PWD/work_dirs/CEGA_DOTA/CEGA_DOTA.pth"
 bash tools/CEGA_DOTA_test.sh val

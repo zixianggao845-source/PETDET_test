@@ -41,6 +41,10 @@ The DOTA test experiment loads:
 work_dirs/CEGA_DOTA/CEGA_DOTA.pth
 ```
 
+Download the checkpoint from
+[Google Drive](https://drive.google.com/file/d/1h6GoFyKSDvI_xxGmi31IarjgUn04mp3O/view?usp=drive_link)
+and place it at `work_dirs/CEGA_DOTA/CEGA_DOTA.pth`.
+
 The test config in this repository is:
 
 ```text
@@ -50,6 +54,7 @@ configs/strip_rcnn/CEGA_DOTA_config.py
 Run validation mAP from the PETDet root:
 
 ```bash
+mkdir -p work_dirs/CEGA_DOTA
 export DOTA_ROOT=/path/to/split_1024_dota1_0
 export CHECKPOINT="$PWD/work_dirs/CEGA_DOTA/CEGA_DOTA.pth"
 bash tools/CEGA_DOTA_test.sh val

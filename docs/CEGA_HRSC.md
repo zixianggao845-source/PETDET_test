@@ -23,7 +23,12 @@ Set `HRSC_ROOT` to the HRSC2016 dataset root when running commands.
 The test experiment loads `work_dirs/CEGA_HRSC.pth` with
 `experiments/ablation/CEGA_HRSC_config.py`.
 
+Download the checkpoint from
+[Google Drive](https://drive.google.com/file/d/1s5pOkjIgufcuBbfDuQkIjXjBCfc8zwxg/view?usp=drive_link)
+and place it at `work_dirs/CEGA_HRSC.pth`.
+
 ```bash
+mkdir -p work_dirs
 export HRSC_ROOT=/path/to/hrsc
 export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh

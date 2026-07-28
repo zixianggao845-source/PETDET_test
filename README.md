@@ -103,6 +103,7 @@ export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```
 Here are the HRSC2016 test results in the picture below:
+<img width="381" height="127" alt="image" src="https://github.com/user-attachments/assets/60b715d0-69ba-4784-895b-71e6f648174e" />
 
 (2) DOTA v1.0 Test
 

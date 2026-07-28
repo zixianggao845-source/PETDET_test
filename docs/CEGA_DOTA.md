@@ -16,16 +16,32 @@ mmdet == 2.28.2
 mmrotate == 0.3.2+
 ```
 
-Expected split DOTA directory layout:
+## 2. Dataset Preparation
+
+Download DOTA v1.0 from the official DOTA page. The train/val sets include
+large aerial images and `labelTxt` OBB annotation text files; the test set
+includes images only. Put them under:
+
+```text
+data/DOTA/
+  train/images/
+  train/labelTxt/
+  val/images/
+  val/labelTxt/
+  test/images/
+```
+
+Then split the large images into 1024 x 1024 patches:
+
+```bash
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
+```
+
+The generated split dataset is used by the test script:
 
 ```text
 DOTA_ROOT/
-  train/
-    annfiles/
-    images/
-  val/
-    annfiles/
-    images/
   trainval/
     annfiles/
     images/
@@ -33,7 +49,13 @@ DOTA_ROOT/
     images/
 ```
 
-## 2. Test Experiment
+For the commands below, set:
+
+```bash
+export DOTA_ROOT=data/split_ss_dota
+```
+
+## 3. Test Experiment
 
 The DOTA test experiment loads:
 
@@ -86,7 +108,7 @@ The checkpoint metadata records:
 | Classes | DOTA v1.0 15 classes |
 | Angle version | `le90` |
 
-## 3. Training Experiment
+## 4. Training Experiment
 
 The training experiment uses the original PETDet config file:
 

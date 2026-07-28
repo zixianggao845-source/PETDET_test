@@ -19,14 +19,43 @@ mmdet == 2.28.2
 mmrotate == 0.3.2
 ```
 
+## 1.2 Dataset Preparation
 
-## 1.2 Test Experiments
+HRSC2016: download and unzip the Kaggle package. It contains ship images, XML
+annotations, and train/test split files. The useful root directory contains
+`ImageSets/` and `FullDataSet/`. Use that directory as `HRSC_ROOT`.
 
-This project uses the HRSC2016 and DOTA v1.0 datasets, with the download links coming right after.
+```bash
+export HRSC_ROOT=/path/to/HRSC2016
+```
 
-HRSC2016: https://www.kaggle.com/datasets/guofeng/hrsc2016
+DOTA v1.0: download the training set, validation set, and testing images from
+the official DOTA page. The train/val sets include large aerial images and
+`labelTxt` OBB annotations; the test set includes images only. Put the original
+files under `data/DOTA/`, then split the large images into 1024 x 1024 patches
+with PETDet/MMRotate tools:
 
-DOTA v1.0: https://captain-whu.github.io/DOTA/dataset.html
+```text
+data/DOTA/
+  train/images/
+  train/labelTxt/
+  val/images/
+  val/labelTxt/
+  test/images/
+```
+
+```bash
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
+python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
+```
+
+Use the generated split directory as `DOTA_ROOT`:
+
+```bash
+export DOTA_ROOT=data/split_ss_dota
+```
+
+## 1.3 Test Experiments
 
 
 | Dataset | Checkpoint | Download | Test script | Config | mAP |
@@ -36,7 +65,7 @@ DOTA v1.0: https://captain-whu.github.io/DOTA/dataset.html
 
 Download the checkpoint and dataset, then put them in the corresponding paths.
 
-### 2.1 HRSC2016 Test
+### 1.3.1 HRSC2016 Test
 
 Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:
 
@@ -47,9 +76,9 @@ export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```
 
-### 2.2 DOTA v1.0 Test
+### 1.3.2 DOTA v1.0 Test
 
-Expected split DOTA :
+Use the split DOTA directory as `DOTA_ROOT`:
 
 ```text
 DOTA_ROOT/
@@ -83,7 +112,7 @@ The output is written to:
 work_dirs/CEGA_DOTA_test/
 ```
 
-## 3. Training Experiments
+## 1.4 Training Experiments
 
 This project uses the following two datasets.
 
@@ -96,7 +125,7 @@ HRSC2016: https://www.kaggle.com/datasets/guofeng/hrsc2016
 
 DOTA v1.0: https://captain-whu.github.io/DOTA/dataset.html
 
-### 3.1 HRSC2016 Training
+### 1.4.1 HRSC2016 Training
 
 Run from the PETDet root:
 
@@ -107,7 +136,7 @@ python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_hrs
 If your dataset path is different from the path in the config, update the config
 or override the data path with `--cfg-options`.
 
-### 3.2 DOTA v1.0 Training
+### 1.4.2 DOTA v1.0 Training
 
 Run from the PETDet root:
 
@@ -117,4 +146,3 @@ python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_dot
 
 If your dataset path is different from the path in the config, update the config
 or override the data path with `--cfg-options`.
-

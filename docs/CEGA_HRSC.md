@@ -18,7 +18,26 @@ mmrotate == 0.3.2
 
 Set `HRSC_ROOT` to the HRSC2016 dataset root when running commands.
 
-## 2. Test Experiment
+## 2. Dataset Preparation
+
+Download HRSC2016 from Kaggle and unzip it. It contains ship images, XML
+annotations, and train/test split files. The useful root directory contains:
+
+```text
+HRSC2016/
+  ImageSets/
+  FullDataSet/
+```
+
+Use that directory as `HRSC_ROOT`:
+
+```bash
+export HRSC_ROOT=/path/to/HRSC2016
+```
+
+No image splitting is needed for HRSC2016 in this project.
+
+## 3. Test Experiment
 
 The test experiment loads `work_dirs/CEGA_HRSC.pth` with
 `experiments/ablation/CEGA_HRSC_config.py`.
@@ -45,7 +64,7 @@ The checkpoint metadata records:
 | Classes | `ship` |
 | Angle version | `le90` |
 
-## 3. Training Experiment
+## 4. Training Experiment
 
 The training experiment uses the original PETDet config file:
 

@@ -91,6 +91,7 @@ Test Experiments
 
 Download the checkpoint and dataset, then put them in the corresponding paths.
 HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
+
 (1) HRSC2016 Test
 
 Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:

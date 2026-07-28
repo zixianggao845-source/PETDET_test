@@ -20,7 +20,7 @@ mmrotate == 0.3.2
 ```
 
 
-## 2. Test Experiments
+## 1.2 Test Experiments
 
 This project uses the HRSC2016 and DOTA v1.0 datasets.
 

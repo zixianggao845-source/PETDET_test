@@ -84,12 +84,12 @@ export DOTA_ROOT=data/split_ss_dota
 ### 1.2.2 Test Experiments
 
 
-| Dataset | Checkpoint | Download | Test script | Config | mAP |
+| Dataset | Model | Download | Test script | Config | mAP |
 |---|---|---|---|---|---|
 | HRSC2016 | `work_dirs/CEGA_HRSC.pth` | [Google Drive](https://drive.google.com/file/d/1s5pOkjIgufcuBbfDuQkIjXjBCfc8zwxg/view?usp=drive_link) | `tools/CEGA_HRSC_test.sh` | `experiments/ablation/CEGA_HRSC_config.py` | `90.80%` |
 | DOTA v1.0 | `work_dirs/CEGA_DOTA/CEGA_DOTA.pth` | [Google Drive](https://drive.google.com/file/d/1h6GoFyKSDvI_xxGmi31IarjgUn04mp3O/view?usp=drive_link) | `tools/CEGA_DOTA_test.sh` | `configs/strip_rcnn/CEGA_DOTA_config.py` | `87.85%` |
 
-Download the checkpoint and dataset, then put them in the corresponding paths.
+Download the model and dataset, then put them in the corresponding paths.
 HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
 
 (1) HRSC2016 Test

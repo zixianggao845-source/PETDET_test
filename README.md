@@ -34,12 +34,21 @@ scripts where your dataset folders are.
 After downloading HRSC2016:
 
 1. Unzip the package.
-2. Find the folder that contains `ImageSets/` and `FullDataSet/`.
-3. Save that folder path in the `HRSC_ROOT` variable. Replace the example path
-   below with your real HRSC2016 folder.
+2. Find the parent folder of `ImageSets/` and `FullDataSet/`.
+   For example, if the unzipped dataset looks like this:
+
+```text
+/data/HRSC2016/
+  ImageSets/
+  FullDataSet/
+```
+
+then the parent folder is `/data/HRSC2016`.
+
+3. Save that parent folder path in `HRSC_ROOT`.
 
 ```bash
-export HRSC_ROOT=/path/to/HRSC2016
+export HRSC_ROOT=/data/HRSC2016
 ```
 
 After downloading DOTA v1.0:

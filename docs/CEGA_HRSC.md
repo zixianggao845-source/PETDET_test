@@ -30,19 +30,21 @@ HRSC2016 folder is.
 After downloading:
 
 1. Unzip the package.
-2. Find the folder that contains:
+2. Find the parent folder of `ImageSets/` and `FullDataSet/`.
+   For example, if the unzipped dataset looks like this:
 
 ```text
-HRSC2016/
+/data/HRSC2016/
   ImageSets/
   FullDataSet/
 ```
 
-3. Save that folder path in the `HRSC_ROOT` variable. Replace the example path
-   below with your real HRSC2016 folder.
+then the parent folder is `/data/HRSC2016`.
+
+3. Save that parent folder path in `HRSC_ROOT`.
 
 ```bash
-export HRSC_ROOT=/path/to/HRSC2016
+export HRSC_ROOT=/data/HRSC2016
 ```
 
 No image splitting is needed for HRSC2016 in this project.

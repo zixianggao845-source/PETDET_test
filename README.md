@@ -28,7 +28,7 @@ Download links:
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | Images, XML annotations, and split files |
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html | Large images, `labelTxt` annotations for train/val, and test images |
 
-`HRSC_ROOT` and `DOTA_ROOT` are only environment variables. They tell the
+HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the
 scripts where your dataset folders are.
 
 After downloading HRSC2016:

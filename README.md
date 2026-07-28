@@ -46,7 +46,7 @@ HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts wh
 
 then the parent folder is /data/HRSC2016.
 
-Final,save that parent folder path in HRSC_ROOT.
+Finally, save the parent folder path to HRSC_ROOT and run the following command in the terminal.
 
 ```bash
 export HRSC_ROOT=/data/HRSC2016

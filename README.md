@@ -30,7 +30,7 @@ Download links:
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | 
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
 
-### 1.2.1
+### 1.2.1 Dataset Processing
 
 (1) After downloading HRSC2016:
 
@@ -81,8 +81,8 @@ Finally,save the generated split folder path in the `DOTA_ROOT` variable. Replac
 export DOTA_ROOT=data/split_ss_dota
 ```
 
-## 1.2.2
-Test Experiments
+### 1.2.2 Test Experiments
+
 
 | Dataset | Checkpoint | Download | Test script | Config | mAP |
 |---|---|---|---|---|---|
@@ -102,6 +102,7 @@ export HRSC_ROOT=/path/to/hrsc
 export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```
+Here are the HRSC2016 test results in the picture below:
 
 (2) DOTA v1.0 Test
 
@@ -138,21 +139,20 @@ The output is written to:
 ```text
 work_dirs/CEGA_DOTA_test/
 ```
+The DOTA v1.0 test results are shown in the picture below:
 
-## 1.4 Training Experiments
-
-This project uses the following two datasets.
+## 2 Training Experiments
+Download the code from GitHub and unzip it in the terminal, then install the above-mentioned interpreter package.
 
 | Dataset | PETDet training config | Main setting |
 |---|---|---|
 | HRSC2016 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py` | CEGA parallel branch, ACL-RPN, StripHead, 72 epochs |
 | DOTA v1.0 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_dota.py` | CEGA parallel branch, ACL-RPN, StripHead, 12 epochs |
 
-HRSC2016: https://www.kaggle.com/datasets/guofeng/hrsc2016
-
-DOTA v1.0: https://captain-whu.github.io/DOTA/dataset.html
-
-### 1.4.1 HRSC2016 Training
+### 2.2.1 Dataset Processing
+The dataset preparation follows the same procedure as described in Section 1.2.1.
+### 2.2.2 Training The Model
+(1) HRSC2016 Training
 
 Run from the PETDet root:
 
@@ -163,7 +163,7 @@ python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_hrs
 If your dataset path is different from the path in the config, update the config
 or override the data path with `--cfg-options`.
 
-### 1.4.2 DOTA v1.0 Training
+(2) DOTA v1.0 Training
 
 Run from the PETDet root:
 
@@ -173,3 +173,8 @@ python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_dot
 
 If your dataset path is different from the path in the config, update the config
 or override the data path with `--cfg-options`.
+
+### 2.2.3 Main Code File Location
+(1) Scale-equivariant group: PETDet/mmrotate/models/backbones/re_resnet.py
+(2) Scale Equivariant Group: PETDet/mmrotate/models/backbones/scale_re_resnet.py
+(3) ACL-RPN: PETDet/mmrotate/models/dense_heads/acl_rpn_head.py

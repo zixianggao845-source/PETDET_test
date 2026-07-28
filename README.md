@@ -54,8 +54,8 @@ export HRSC_ROOT=/data/HRSC2016
 
 （2）After downloading DOTA v1.0:
 
-1. Unzip train, val, and test files.
-2. Put the original files under data/DOTA/.
+First,unzip train, val, and test files.
+Second,put the original files under data/DOTA/.
 
 ```text
 data/DOTA/
@@ -66,14 +66,14 @@ data/DOTA/
   test/images/
 ```
 
-3. Split DOTA into 1024 x 1024 patches.
+Next,split DOTA into 1024 x 1024 patches.
 
 ```bash
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
 ```
 
-4. Save the generated split folder path in the `DOTA_ROOT` variable. Replace the
+Finally,save the generated split folder path in the `DOTA_ROOT` variable. Replace the
    example path below if your split folder is somewhere else.
 
 ```bash

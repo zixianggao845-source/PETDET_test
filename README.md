@@ -1,7 +1,8 @@
-# CEGA Test
+## PETDET Test
 
-This warehouse provides testing and training instructions for the project. The original PETDet configuration file description and training steps are listed below. At present, the project provides models and testing steps. The complete training experiment file is not yet included, and the training file will be added later.
-## 1. Environment
+This warehouse provides testing and training instructions for the project. At present, the project provides models and testing steps. The complete training experiment file is not yet included, and the training file will be added later.
+
+## 1.1 Configure The Environment
 
 Use a PETDet environment with the same core dependencies:
 

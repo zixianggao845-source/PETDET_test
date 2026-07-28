@@ -34,13 +34,12 @@ scripts where your dataset folders are.
 After downloading HRSC2016:
 
 1. Unzip the package.
-2. Find the parent folder of `ImageSets/` and `FullDataSet/`.
+2. Find the parent folder of `ImageSets/  and `FullDataSet/`.
    For example, if the unzipped dataset looks like this:
 
 ```text
-/data/HRSC2016/
-  ImageSets/
-  FullDataSet/
+/data/HRSC2016/ImageSets
+/FullDataSet/
 ```
 
 then the parent folder is `/data/HRSC2016`.

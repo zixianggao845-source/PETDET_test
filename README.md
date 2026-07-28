@@ -55,6 +55,7 @@ export HRSC_ROOT=/data/HRSC2016
 （2）After downloading DOTA v1.0:
 
 First,unzip train, val, and test files.
+
 Second,put the original files under data/DOTA/.
 
 ```text

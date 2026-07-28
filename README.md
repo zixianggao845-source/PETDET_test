@@ -34,8 +34,8 @@ HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts wh
 
 （1）After downloading HRSC2016:
 
-1. Unzip the package.
-2. Find the parent folder of ImageSets/  and FullDataSet/.
+① Unzip the package.
+② Find the parent folder of ImageSets/  and FullDataSet/.
    For example, if the unzipped dataset looks like this:
 
 ```text
@@ -45,7 +45,7 @@ HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts wh
 
 then the parent folder is /data/HRSC2016.
 
-3. Save that parent folder path in HRSC_ROOT.
+③ Save that parent folder path in HRSC_ROOT.
 
 ```bash
 export HRSC_ROOT=/data/HRSC2016

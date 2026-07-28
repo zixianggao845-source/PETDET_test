@@ -24,6 +24,9 @@ Download: https://www.kaggle.com/datasets/guofeng/hrsc2016
 
 The downloaded package contains images, XML annotations, and split files.
 
+`HRSC_ROOT` is only an environment variable. It tells the scripts where your
+HRSC2016 folder is.
+
 After downloading:
 
 1. Unzip the package.
@@ -35,7 +38,8 @@ HRSC2016/
   FullDataSet/
 ```
 
-3. Use that folder as `HRSC_ROOT`.
+3. Save that folder path in the `HRSC_ROOT` variable. Replace the example path
+   below with your real HRSC2016 folder.
 
 ```bash
 export HRSC_ROOT=/path/to/HRSC2016

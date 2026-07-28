@@ -23,6 +23,9 @@ Download: https://captain-whu.github.io/DOTA/dataset.html
 The downloaded train/val sets contain large images and `labelTxt` annotations.
 The downloaded test set contains images only.
 
+`DOTA_ROOT` is only an environment variable. It tells the scripts where your
+split DOTA folder is.
+
 After downloading:
 
 1. Unzip train, val, and test files.
@@ -44,7 +47,8 @@ python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/spli
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
 ```
 
-4. Use the generated split folder as `DOTA_ROOT`.
+4. Save the generated split folder path in the `DOTA_ROOT` variable. Replace the
+   example path below if your split folder is somewhere else.
 
 ```text
 DOTA_ROOT/

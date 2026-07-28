@@ -28,11 +28,15 @@ Download links:
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | Images, XML annotations, and split files |
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html | Large images, `labelTxt` annotations for train/val, and test images |
 
+`HRSC_ROOT` and `DOTA_ROOT` are only environment variables. They tell the
+scripts where your dataset folders are.
+
 After downloading HRSC2016:
 
 1. Unzip the package.
 2. Find the folder that contains `ImageSets/` and `FullDataSet/`.
-3. Use that folder as `HRSC_ROOT`.
+3. Save that folder path in the `HRSC_ROOT` variable. Replace the example path
+   below with your real HRSC2016 folder.
 
 ```bash
 export HRSC_ROOT=/path/to/HRSC2016
@@ -59,7 +63,8 @@ python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/spli
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
 ```
 
-4. Use the generated split folder as `DOTA_ROOT`.
+4. Save the generated split folder path in the `DOTA_ROOT` variable. Replace the
+   example path below if your split folder is somewhere else.
 
 ```bash
 export DOTA_ROOT=data/split_ss_dota

@@ -19,10 +19,6 @@ mmrotate == 0.3.2
 
 This project uses the HRSC2016 and DOTA v1.0 datasets.
 
-| Dataset | PETDet training config | Main setting |
-|---|---|---|
-| HRSC2016 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py` | CEGA parallel branch, ACL-RPN, StripHead, 72 epochs |
-| DOTA v1.0 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_dota.py` | CEGA parallel branch, ACL-RPN, StripHead, 12 epochs |
 
 HRSC2016: https://www.kaggle.com/datasets/guofeng/hrsc2016
 

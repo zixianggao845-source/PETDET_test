@@ -35,6 +35,7 @@ HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts wh
 （1）After downloading HRSC2016:
 
  First,unzip the package.
+ 
  Second,find the parent folder of ImageSets/  and FullDataSet/.
    For example, if the unzipped dataset looks like this:
 

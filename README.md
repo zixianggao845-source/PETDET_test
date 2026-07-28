@@ -176,5 +176,7 @@ or override the data path with `--cfg-options`.
 
 ### 2.2.3 Main Code File Location
 (1) Scale-equivariant group: PETDet/mmrotate/models/backbones/re_resnet.py
+
 (2) Scale Equivariant Group: PETDet/mmrotate/models/backbones/scale_re_resnet.py
+
 (3) ACL-RPN: PETDet/mmrotate/models/dense_heads/acl_rpn_head.py

@@ -1,7 +1,9 @@
 ## PETDET Test
 
 This warehouse provides testing and training instructions for the project. At present, the project provides models and testing steps. The complete training experiment file is not yet included, and the training file will be added later.
+
 Test: Load the trained models, evaluate CEGA_HRSC.pth on the HRSC2016 dataset, and evaluate CEGA_DOTA.pth on the DOTA v1.0 dataset. The accuracy mAP on HRSC2016 is 90.80%, and the accuracy on DOTA v1.0 is 87.85%.
+
 Training: Trained on the HRSC2016 dataset and the DOTA v1.0 dataset.
 
 ## 1.1 Configure The Environment

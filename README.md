@@ -1,6 +1,6 @@
-## 1 PETDET 
+#  PETDET 
 
-This warehouse provides testing and training instructions for the project. At present, the project provides models and testing steps. The complete training experiment file is not yet included, and the training file will be added later.
+This repository provides testing and training instructions for the project. Currently, it includes the models and testing procedures; the complete training experiment file has not yet been incorporated and will be added at a later stage.
 
 Test: Load the trained models, evaluate CEGA_HRSC.pth on the HRSC2016 dataset, and evaluate CEGA_DOTA.pth on the DOTA v1.0 dataset. The accuracy mAP on HRSC2016 is 90.80%, and the accuracy on DOTA v1.0 is 87.85%.
 
@@ -30,9 +30,9 @@ Download links:
 
 HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
 
-## 1.2.1
+### 1.2.1
 
-（1）After downloading HRSC2016:
+(1) After downloading HRSC2016:
 
  First,unzip the package.
  
@@ -52,7 +52,7 @@ Finally, save the parent folder path to HRSC_ROOT and run the following command 
 export HRSC_ROOT=/data/HRSC2016
 ```
 
-（2）After downloading DOTA v1.0:
+(2) After downloading DOTA v1.0:
 
 First,unzip train, val, and test files.
 
@@ -81,7 +81,8 @@ Finally,save the generated split folder path in the `DOTA_ROOT` variable. Replac
 export DOTA_ROOT=data/split_ss_dota
 ```
 
-## 1.3 Test Experiments
+## 1.2.2
+Test Experiments
 
 | Dataset | Checkpoint | Download | Test script | Config | mAP |
 |---|---|---|---|---|---|
@@ -89,8 +90,7 @@ export DOTA_ROOT=data/split_ss_dota
 | DOTA v1.0 | `work_dirs/CEGA_DOTA/CEGA_DOTA.pth` | [Google Drive](https://drive.google.com/file/d/1h6GoFyKSDvI_xxGmi31IarjgUn04mp3O/view?usp=drive_link) | `tools/CEGA_DOTA_test.sh` | `configs/strip_rcnn/CEGA_DOTA_config.py` | `87.85%` |
 
 Download the checkpoint and dataset, then put them in the corresponding paths.
-
-### 1.3.1 HRSC2016 Test
+(1) HRSC2016 Test
 
 Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:
 
@@ -101,7 +101,7 @@ export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```
 
-### 1.3.2 DOTA v1.0 Test
+(2) DOTA v1.0 Test
 
 Use the split DOTA directory as `DOTA_ROOT`:
 

@@ -27,15 +27,14 @@ Download links:
 |---|---|
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | 
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
+HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
 
 ## 1.2.1
 
-HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
-
-After downloading HRSC2016:
+（1）After downloading HRSC2016:
 
 1. Unzip the package.
-2. Find the parent folder of ImageSets/  and `FullDataSet/.
+2. Find the parent folder of ImageSets/  and FullDataSet/.
    For example, if the unzipped dataset looks like this:
 
 ```text
@@ -51,7 +50,7 @@ then the parent folder is /data/HRSC2016.
 export HRSC_ROOT=/data/HRSC2016
 ```
 
-After downloading DOTA v1.0:
+（2）After downloading DOTA v1.0:
 
 1. Unzip train, val, and test files.
 2. Put the original files under data/DOTA/.

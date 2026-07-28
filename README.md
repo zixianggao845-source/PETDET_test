@@ -21,19 +21,27 @@ mmrotate == 0.3.2
 
 ## 1.2 Dataset Preparation
 
-HRSC2016: download and unzip the Kaggle package. It contains ship images, XML
-annotations, and train/test split files. The useful root directory contains
-`ImageSets/` and `FullDataSet/`. Use that directory as `HRSC_ROOT`.
+Download links:
+
+| Dataset | Link | Downloaded content |
+|---|---|---|
+| HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | Images, XML annotations, and split files |
+| DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html | Large images, `labelTxt` annotations for train/val, and test images |
+
+After downloading HRSC2016:
+
+1. Unzip the package.
+2. Find the folder that contains `ImageSets/` and `FullDataSet/`.
+3. Use that folder as `HRSC_ROOT`.
 
 ```bash
 export HRSC_ROOT=/path/to/HRSC2016
 ```
 
-DOTA v1.0: download the training set, validation set, and testing images from
-the official DOTA page. The train/val sets include large aerial images and
-`labelTxt` OBB annotations; the test set includes images only. Put the original
-files under `data/DOTA/`, then split the large images into 1024 x 1024 patches
-with PETDet/MMRotate tools:
+After downloading DOTA v1.0:
+
+1. Unzip train, val, and test files.
+2. Put the original files under `data/DOTA/`.
 
 ```text
 data/DOTA/
@@ -44,19 +52,20 @@ data/DOTA/
   test/images/
 ```
 
+3. Split DOTA into 1024 x 1024 patches.
+
 ```bash
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
 ```
 
-Use the generated split directory as `DOTA_ROOT`:
+4. Use the generated split folder as `DOTA_ROOT`.
 
 ```bash
 export DOTA_ROOT=data/split_ss_dota
 ```
 
 ## 1.3 Test Experiments
-
 
 | Dataset | Checkpoint | Download | Test script | Config | mAP |
 |---|---|---|---|---|---|

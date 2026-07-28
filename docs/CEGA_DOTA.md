@@ -18,9 +18,15 @@ mmrotate == 0.3.2+
 
 ## 2. Dataset Preparation
 
-Download DOTA v1.0 from the official DOTA page. The train/val sets include
-large aerial images and `labelTxt` OBB annotation text files; the test set
-includes images only. Put them under:
+Download: https://captain-whu.github.io/DOTA/dataset.html
+
+The downloaded train/val sets contain large images and `labelTxt` annotations.
+The downloaded test set contains images only.
+
+After downloading:
+
+1. Unzip train, val, and test files.
+2. Put the original files under `data/DOTA/`.
 
 ```text
 data/DOTA/
@@ -31,14 +37,14 @@ data/DOTA/
   test/images/
 ```
 
-Then split the large images into 1024 x 1024 patches:
+3. Split DOTA into 1024 x 1024 patches.
 
 ```bash
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
 python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
 ```
 
-The generated split dataset is used by the test script:
+4. Use the generated split folder as `DOTA_ROOT`.
 
 ```text
 DOTA_ROOT/
@@ -48,8 +54,6 @@ DOTA_ROOT/
   test/
     images/
 ```
-
-For the commands below, set:
 
 ```bash
 export DOTA_ROOT=data/split_ss_dota

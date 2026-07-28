@@ -20,8 +20,14 @@ Set `HRSC_ROOT` to the HRSC2016 dataset root when running commands.
 
 ## 2. Dataset Preparation
 
-Download HRSC2016 from Kaggle and unzip it. It contains ship images, XML
-annotations, and train/test split files. The useful root directory contains:
+Download: https://www.kaggle.com/datasets/guofeng/hrsc2016
+
+The downloaded package contains images, XML annotations, and split files.
+
+After downloading:
+
+1. Unzip the package.
+2. Find the folder that contains:
 
 ```text
 HRSC2016/
@@ -29,7 +35,7 @@ HRSC2016/
   FullDataSet/
 ```
 
-Use that directory as `HRSC_ROOT`:
+3. Use that folder as `HRSC_ROOT`.
 
 ```bash
 export HRSC_ROOT=/path/to/HRSC2016

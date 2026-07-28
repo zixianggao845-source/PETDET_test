@@ -22,8 +22,7 @@ mmrotate == 0.3.2
 
 ## 1.2 Test Experiments
 
-This project uses the HRSC2016 and DOTA v1.0 datasets.
-
+This project uses the HThis project uses the HRSC2016 and DOTA v1.0 datasets, with the download links coming right after.
 
 HRSC2016: https://www.kaggle.com/datasets/guofeng/hrsc2016
 

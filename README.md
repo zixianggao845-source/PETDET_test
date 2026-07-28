@@ -30,8 +30,6 @@ Download links:
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | 
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
 
-HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
-
 ### 1.2.1
 
 (1) After downloading HRSC2016:
@@ -92,6 +90,7 @@ Test Experiments
 | DOTA v1.0 | `work_dirs/CEGA_DOTA/CEGA_DOTA.pth` | [Google Drive](https://drive.google.com/file/d/1h6GoFyKSDvI_xxGmi31IarjgUn04mp3O/view?usp=drive_link) | `tools/CEGA_DOTA_test.sh` | `configs/strip_rcnn/CEGA_DOTA_config.py` | `87.85%` |
 
 Download the checkpoint and dataset, then put them in the corresponding paths.
+HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
 (1) HRSC2016 Test
 
 Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:

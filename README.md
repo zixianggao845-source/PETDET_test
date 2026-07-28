@@ -161,7 +161,7 @@ python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_hrs
 ```
 
 If your dataset path is different from the path in the config, update the config
-or override the data path with `--cfg-options`.
+or override the data path with --cfg-options.
 
 (2) DOTA v1.0 Training
 
@@ -172,7 +172,7 @@ python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_dot
 ```
 
 If your dataset path is different from the path in the config, update the config
-or override the data path with `--cfg-options`.
+or override the data path with --cfg-options.
 
 ### 2.2.3 Main Code File Location
 (1) Rotation Equivariant Group: PETDet/mmrotate/models/backbones/re_resnet.py

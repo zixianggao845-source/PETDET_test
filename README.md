@@ -19,7 +19,9 @@ mmdet == 2.28.2
 mmrotate == 0.3.2
 ```
 
-## 1.2 Dataset Preparation
+## 1.2 Dataset and Code Preparation
+
+To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.
 
 Download links:
 
@@ -32,9 +34,7 @@ Download links:
 
 (1)  First,the dataset can be downloaded from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it.
 
-Second, to download the testing code, click the Code button on the repository homepage and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Finally, test the model on the HRSC2016 and DOTA v1.0 datasets.
-
-Finally, save the dataset path to HRSC_ROOT and run the following command in the terminal.
+Then, save the dataset path to HRSC_ROOT and run the following command in the terminal.
 
 ```bash
 export HRSC_ROOT=/data/HRSC2016

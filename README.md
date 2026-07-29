@@ -28,11 +28,12 @@ Download links:
 | Dataset | Link |
 |---|---|
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | 
+| DOTA v1.0 (Split) | https://captain-whu.github.io/DOTA/dataset.html |
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
 
 ### 1.2.1 Dataset Processing
 
-(1)  First,the dataset can be downloaded from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it.
+(1)  First, download the dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it to the data folder.
 
 Then, save the dataset path to HRSC_ROOT and run the following command in the terminal.
 
@@ -40,33 +41,12 @@ Then, save the dataset path to HRSC_ROOT and run the following command in the te
 export HRSC_ROOT=/data/HRSC2016
 ```
 
-(2) After downloading DOTA v1.0:
+(2) First, download the DOTA v1.0 (Split) dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it to the data folder.
 
-First,unzip train, val, and test files.
-
-Second,put the original files under data/DOTA/.
-
-```text
-data/DOTA/
-  train/images/
-  train/labelTxt/
-  val/images/
-  val/labelTxt/
-  test/images/
-```
-
-Next,split DOTA into 1024 x 1024 patches.
+Then,save the split folder path in the `DOTA_ROOT` variable. 
 
 ```bash
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_trainval.json
-python tools/data/dota/split/img_split.py --base-json tools/data/dota/split/split_configs/ss_test.json
-```
-
-Finally,save the generated split folder path in the `DOTA_ROOT` variable. Replace the
-   example path below if your split folder is somewhere else.
-
-```bash
-export DOTA_ROOT=data/split_ss_dota
+export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0
 ```
 
 ### 1.2.2 Test Experiments

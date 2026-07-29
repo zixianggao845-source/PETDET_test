@@ -23,7 +23,7 @@ mmrotate == 0.3.2
 
 To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.HRSC_ROOT and DOTA_ROOT are only environment variables. 
 
-Download links:
+Datasets download links:
 
 | Dataset | Link |
 |---|---|
@@ -43,7 +43,7 @@ export HRSC_ROOT=/data/HRSC2016
 
 (2) First, download the DOTA v1.0 (Split) dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it to the data folder.
 
-Then,save the split folder path in the `DOTA_ROOT` variable. 
+Then,save the split folder path in the DOTA_ROOT variable. 
 
 ```bash
 export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0
@@ -73,17 +73,6 @@ Here are the HRSC2016 test results in the picture below:
 
 
 (2) DOTA v1.0 Test
-
-Use the split DOTA directory as `DOTA_ROOT`:
-
-```text
-DOTA_ROOT/
-  trainval/
-    annfiles/
-    images/
-  test/
-    images/
-```
 
 Run validation mAP from the PETDet root:
 

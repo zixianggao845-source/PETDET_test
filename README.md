@@ -91,6 +91,8 @@ export DOTA_ROOT=data/split_ss_dota
 
 Download the model and dataset, then put them in the corresponding paths.
 HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
+For DOTA v1.0, use the included `mmrotate/models/backbones/stripnet.py`. This
+is the StripNet implementation that matches `CEGA_DOTA.pth`.
 
 (1) HRSC2016 Test
 

@@ -21,7 +21,7 @@ mmrotate == 0.3.2
 
 ## 1.2 Dataset and Code Preparation
 
-To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.
+To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.HRSC_ROOT and DOTA_ROOT are only environment variables. 
 
 Download links:
 
@@ -56,11 +56,6 @@ export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0
 |---|---|---|---|---|---|
 | HRSC2016 | `work_dirs/CEGA_HRSC.pth` | [Google Drive](https://drive.google.com/file/d/1s5pOkjIgufcuBbfDuQkIjXjBCfc8zwxg/view?usp=drive_link) | `tools/CEGA_HRSC_test.sh` | `experiments/ablation/CEGA_HRSC_config.py` | `74.58%` |
 | DOTA v1.0 | `work_dirs/CEGA_DOTA/CEGA_DOTA.pth` | [Google Drive](https://drive.google.com/file/d/1h6GoFyKSDvI_xxGmi31IarjgUn04mp3O/view?usp=drive_link) | `tools/CEGA_DOTA_test.sh` | `configs/strip_rcnn/CEGA_DOTA_config.py` | `87.85%` |
-
-Download the model and dataset, then put them in the corresponding paths.
-HRSC_ROOT and DOTA_ROOT are only environment variables. They tell the scripts where your dataset folders are.
-For DOTA v1.0, use the included `mmrotate/models/backbones/stripnet.py`. This
-is the StripNet implementation that matches `CEGA_DOTA.pth`.
 
 (1) HRSC2016 Test
 

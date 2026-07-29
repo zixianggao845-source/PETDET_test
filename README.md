@@ -41,9 +41,14 @@ Then, save the dataset path to HRSC_ROOT and run the following command in the te
 export HRSC_ROOT=/data/HRSC2016
 ```
 
-(2) First, download the DOTA v1.0 (Split) dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it to the data folder.
+(2) First, download the DOTA v1.0 (Split) dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016.
+After downloading all .part_* files from Baidu Netdisk, place them in the same directory and merge them into the original archive using:
 
-Then,save the split folder path in the DOTA_ROOT variable. 
+```bash
+cat CEGA_DOTA_split_1024_dota1_0.tar.zst.part_* > CEGA_DOTA_split_1024_dota1_0.tar.zst
+```
+
+Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the data directory and set DOTA_ROOT to the path of the extracted dataset.
 
 ```bash
 export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0

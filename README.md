@@ -120,6 +120,7 @@ To obtain the code, click the Code button on the repository homepage and select 
 
 ### 2.2.1 Dataset Processing
 The dataset preparation follows the same procedure as described in Section 1.2.1.
+
 Note: If you prefer to split the DOTA v1.0 dataset into patches yourself, please download the original dataset from https://captain-whu.github.io/DOTA/dataset.html, then use the following code to perform the splitting, and set the DOTA_ROOT path variable accordingly.
 
 ```bash
@@ -138,8 +139,7 @@ Run from the PETDet root:
 python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py --seed 3407
 ```
 
-If your dataset path is different from the path in the config, update the config
-or override the data path with --cfg-options.
+If your dataset path is different from the path in the config, update the config.
 
 (2) DOTA v1.0 Training
 

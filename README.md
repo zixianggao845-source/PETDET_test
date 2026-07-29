@@ -32,21 +32,9 @@ Download links:
 
 ### 1.2.1 Dataset Processing
 
-(1) After downloading HRSC2016:
+(1)  First,the dataset can be downloaded from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it.
 
- First,unzip the package.
- 
- Second,find the parent folder of ImageSets/  and FullDataSet/.
-   For example, if the unzipped dataset looks like this:
-
-```text
-/data/HRSC2016/ImageSets
-/FullDataSet/
-```
-
-then the parent folder is /data/HRSC2016.
-
-Finally, save the parent folder path to HRSC_ROOT and run the following command in the terminal.
+Finally, save the dataset path to HRSC_ROOT and run the following command in the terminal.
 
 ```bash
 export HRSC_ROOT=/data/HRSC2016

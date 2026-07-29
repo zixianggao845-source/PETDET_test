@@ -28,7 +28,7 @@ Datasets download links:
 | Dataset | Link |
 |---|---|
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | 
-| DOTA v1.0 (Split) | https://captain-whu.github.io/DOTA/dataset.html |
+| DOTA v1.0 (Split) | https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew |
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
 
 ### 1.2.1 Dataset Processing
@@ -41,7 +41,7 @@ Then, save the dataset path to HRSC_ROOT and run the following command in the te
 export HRSC_ROOT=/data/HRSC2016
 ```
 
-(2) First, download the DOTA v1.0 (Split) dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016.
+(2) First, download the DOTA v1.0 (Split) dataset from https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew.
 After downloading all .part_* files from Baidu Netdisk, place them in the same directory and merge them into the original archive using:
 
 ```bash

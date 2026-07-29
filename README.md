@@ -89,7 +89,7 @@ Run validation mAP from the PETDet root:
 
 ```bash
 mkdir -p work_dirs/CEGA_DOTA
-export DOTA_ROOT=/path/to/split_1024_dota1_0
+export DOTA_ROOT=/path/to/CEGA_DOTA_split_1024_dota1_0
 export CHECKPOINT="$PWD/work_dirs/CEGA_DOTA/CEGA_DOTA.pth"
 bash tools/CEGA_DOTA_test.sh val
 ```
@@ -97,7 +97,7 @@ bash tools/CEGA_DOTA_test.sh val
 Generate DOTA Task1 submission files:
 
 ```bash
-export DOTA_ROOT=/path/to/split_1024_dota1_0
+export DOTA_ROOT=/path/to/CEGA_DOTA_split_1024_dota1_0
 export CHECKPOINT="$PWD/work_dirs/CEGA_DOTA/CEGA_DOTA.pth"
 bash tools/CEGA_DOTA_test.sh submit
 ```
@@ -120,6 +120,15 @@ To obtain the code, click the Code button on the repository homepage and select 
 
 ### 2.2.1 Dataset Processing
 The dataset preparation follows the same procedure as described in Section 1.2.1.
+Note: If you prefer to split the DOTA v1.0 dataset into patches yourself, please download the original dataset from https://captain-whu.github.io/DOTA/dataset.html, then use the following code to perform the splitting, and set the DOTA_ROOT path variable accordingly.
+
+```bash
+python tools/data/dota/split/img_split.py \
+  --base-json tools/data/dota/split/split_configs/ss_trainval.json
+
+python tools/data/dota/split/img_split.py \
+  --base-json tools/data/dota/split/split_configs/ss_test.json
+```
 ### 2.2.2 Training The Model
 (1) HRSC2016 Training
 

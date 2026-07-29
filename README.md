@@ -4,9 +4,7 @@ This repository provides testing and training documentation for the project. Cur
 
 # 1 Test
 
-Test: Load the trained models, evaluate CEGA_HRSC.pth on the HRSC2016 dataset, and evaluate CEGA_DOTA.pth on the DOTA v1.0 dataset. The accuracy mAP on HRSC2016 is 90.80%, and the accuracy on DOTA v1.0 is 87.85%.
-
-Training: Trained on the HRSC2016 dataset and the DOTA v1.0 dataset.
+Test: Load the trained models, evaluate CEGA_HRSC.pth on the HRSC2016 dataset, and evaluate CEGA_DOTA.pth on the DOTA v1.0 dataset. The accuracy mAP on HRSC2016 is 74.58%, and the accuracy on DOTA v1.0 is 87.85%.
 
 ## 1.1 Configure The Environment
 
@@ -94,7 +92,8 @@ bash tools/CEGA_HRSC_test.sh
 ```
 Here are the HRSC2016 test results in the picture below:
 
-<img width="381" height="127" alt="image" src="https://github.com/user-attachments/assets/60b715d0-69ba-4784-895b-71e6f648174e" />
+<img width="407" height="15" alt="image" src="https://github.com/user-attachments/assets/2f8176fe-5dc3-4373-80a0-306efa8e864c" />
+
 
 (2) DOTA v1.0 Test
 
@@ -132,6 +131,7 @@ The output is written to:
 work_dirs/CEGA_DOTA_test/
 ```
 The DOTA v1.0 test results are shown in the picture below:
+<img width="301" height="19" alt="image" src="https://github.com/user-attachments/assets/f58b1513-fc6a-4db2-bde9-43a874c58878" />
 
 ## 2 Training Experiments
 Download the code from GitHub and unzip it in the terminal, then install the above-mentioned interpreter package.

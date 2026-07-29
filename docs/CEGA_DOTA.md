@@ -60,7 +60,7 @@ DOTA_ROOT/
 ```
 
 ```bash
-export DOTA_ROOT=data/split_ss_dota
+export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0
 ```
 
 ## 3. Test Experiment
@@ -85,7 +85,7 @@ Run validation mAP from the PETDet root:
 
 ```bash
 mkdir -p work_dirs/CEGA_DOTA
-export DOTA_ROOT=/path/to/split_1024_dota1_0
+export DOTA_ROOT=/path/to/CEGA_DOTA_split_1024_dota1_0
 export CHECKPOINT="$PWD/work_dirs/CEGA_DOTA/CEGA_DOTA.pth"
 bash tools/CEGA_DOTA_test.sh val
 ```
@@ -93,7 +93,7 @@ bash tools/CEGA_DOTA_test.sh val
 Generate DOTA Task1 submission files:
 
 ```bash
-export DOTA_ROOT=/path/to/split_1024_dota1_0
+export DOTA_ROOT=/path/to/CEGA_DOTA_split_1024_dota1_0
 export CHECKPOINT="$PWD/work_dirs/CEGA_DOTA/CEGA_DOTA.pth"
 bash tools/CEGA_DOTA_test.sh submit
 ```

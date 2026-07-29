@@ -32,6 +32,8 @@ Download links:
 
 (1)  First,the dataset can be downloaded from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it.
 
+Second, to download the testing code, click the Code button on the repository homepage and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Finally, test the model on the HRSC2016 and DOTA v1.0 datasets.
+
 Finally, save the dataset path to HRSC_ROOT and run the following command in the terminal.
 
 ```bash
@@ -131,11 +133,11 @@ The output is written to:
 work_dirs/CEGA_DOTA_test/
 ```
 The DOTA v1.0 test results are shown in the picture below:
+
 <img width="301" height="19" alt="image" src="https://github.com/user-attachments/assets/f58b1513-fc6a-4db2-bde9-43a874c58878" />
 
 ## 2 Training Experiments
-Download the code from GitHub and unzip it in the terminal, then install the above-mentioned interpreter package.
-The model was trained on the HRSC2016 and DOTA v1.0 datasets.
+To obtain the code, click the Code button on the repository homepage and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, train the model on the HRSC2016 and DOTA v1.0 datasets.
 | Dataset | PETDet training config | Main setting |
 |---|---|---|
 | HRSC2016 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py` | CEGA parallel branch, ACL-RPN, StripHead, 72 epochs |

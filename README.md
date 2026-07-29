@@ -1,6 +1,6 @@
 #  PETDET 
 
-This repository provides testing and training instructions for the project. Currently, it includes the models and testing procedures; the complete training experiment file has not yet been incorporated and will be added at a later stage.
+This repository provides testing and training documentation for the project. Currently, it includes the model and test programs; the complete training experiment files have not yet been incorporated and will be uploaded together with the training code during the paper revision stage.
 
 # 1 Test
 
@@ -147,7 +147,7 @@ The DOTA v1.0 test results are shown in the picture below:
 
 ## 2 Training Experiments
 Download the code from GitHub and unzip it in the terminal, then install the above-mentioned interpreter package.
-
+The model was trained on the HRSC2016 and DOTA v1.0 datasets.
 | Dataset | PETDet training config | Main setting |
 |---|---|---|
 | HRSC2016 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py` | CEGA parallel branch, ACL-RPN, StripHead, 72 epochs |

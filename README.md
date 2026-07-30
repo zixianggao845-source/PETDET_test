@@ -23,6 +23,8 @@ mmrotate == 0.3.2
 
 First, click https://github.com/zixianggao845-source/PETDET_test to access the repository homepage. Click the download button to download the PETDET_test.zip. Then, extract PETDET_test.zip to obtain the PETDET_test folder. 
 
+The project contains the following main directories: configs/, which provides testing configuration files for CEGA, including the DOTA v1.0 test configuration; data/, which serves as the dataset storage directory for downloaded or processed datasets HRSC2016 and CEGA_DOTA_split_1024_dota1_0; docs/, which provides detailed reproduction instructions for each dataset, including dataset preparation, checkpoint placement, and testing commands; experiments/, which contains configuration files for CEGA training and reproduction; mmrotate/, which includes the modified model components required by the released checkpoints; and tools/, which provides shell scripts for running tests on the HRSC2016 and DOTA v1.0 datasets.
+
 Datasets download links:
 
 | Dataset | Link |
@@ -65,7 +67,7 @@ export HRSC_ROOT=/path/to/HRSC2016
 export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```
-Results in HRSC2016 are shown as follow
+Results in HRSC2016 are shown as follow:
 
 <img width="407" height="15" alt="image" src="https://github.com/user-attachments/assets/2f8176fe-5dc3-4373-80a0-306efa8e864c" />
 
@@ -97,7 +99,7 @@ work_dirs/CEGA_DOTA_test/
 
 DOTA Official Evaluation: Visit http://bed4rs.net:8001/login/?next=/evaluation1/ and log in with your account. Upload the Task1 submission archive to the official evaluation platform. The evaluation results will be available on the website after a few minutes.
 
-DOTA v1.0 local evaluation results are shown in the figure below:
+Results in HRSC2016 are shown as follow:
 
 <img width="301" height="19" alt="image" src="https://github.com/user-attachments/assets/f58b1513-fc6a-4db2-bde9-43a874c58878" />
 

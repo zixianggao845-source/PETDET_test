@@ -30,7 +30,7 @@ Datasets download links:
 | Dataset | Link |
 |---|---|
 | HRSC2016 | https://www.kaggle.com/datasets/guofeng/hrsc2016 | 
-| DOTA v1.0 (Split) | https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew |
+| DOTA v1.0 (Split) | https://pan.baidu.com/s/1tSbJqooAzbMH1WS7SmZxRA?pwd=y84w |
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
 
 ### 1.2.1 Dataset
@@ -41,7 +41,7 @@ First, click https://www.kaggle.com/datasets/guofeng/hrsc2016 and then click the
 
 (2) DOTA v1.0 Dataset
 
-First, download the DOTA v1.0 (Split) dataset from the following Baidu Netdisk link: https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew. Download the CEGA_DOTA_split_1024_dota1_0.part_00 ,CEGA_DOTA_split_1024_dota1_0.part_01 ,..., CEGA_DOTA_split_1024_dota1_0.part_11 files and merge them into the original archive using the following procedure.
+First, download the DOTA v1.0 (Split) dataset from the following Baidu Netdisk link: https://pan.baidu.com/s/1tSbJqooAzbMH1WS7SmZxRA?pwd=y84w. Download the CEGA_DOTA_split_1024_dota1_0.part_00 ,CEGA_DOTA_split_1024_dota1_0.part_01 ,..., CEGA_DOTA_split_1024_dota1_0.part_11 files and merge them into the original archive using the following procedure.
 
 ```bash
 cat CEGA_DOTA_split_1024_dota1_0.tar.zst.part_* > CEGA_DOTA_split_1024_dota1_0.tar.zst

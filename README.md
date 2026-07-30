@@ -19,7 +19,7 @@ mmdet == 2.28.2
 mmrotate == 0.3.2
 ```
 
-## 1.2 Dataset and Code Preparation
+## 1.2 Dataset
 
 To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.HRSC_ROOT and DOTA_ROOT are only environment variables. 
 
@@ -35,13 +35,7 @@ Datasets download links:
 
 (1) HRSC2016 Dataset
 
-First, click https://www.kaggle.com/datasets/guofeng/hrsc2016 and click the download button to obtain the archive.zip file. Extract archive.zip to obtain the archive folder. Rename the archive folder to HRSC2016 and copy the HRSC2016 folder into the /data directory.
-
-Then, save the dataset path to HRSC_ROOT and run the following command in the terminal.
-
-```bash
-export HRSC_ROOT=/data/HRSC2016
-```
+First, click https://www.kaggle.com/datasets/guofeng/hrsc2016 and then click the download button to obtain the archive.zip. Extract archive.zip to obtain the archive folder. Rename the archive folder to HRSC2016 and copy the HRSC2016 folder into the /data directory.
 
 (2) DOTA v1.0 Dataset
 
@@ -52,10 +46,6 @@ cat CEGA_DOTA_split_1024_dota1_0.tar.zst.part_* > CEGA_DOTA_split_1024_dota1_0.t
 ```
 
 Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory and set DOTA_ROOT to the path of the extracted dataset.
-
-```bash
-export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0
-```
 
 ### 1.2.2 Test Experiments
 

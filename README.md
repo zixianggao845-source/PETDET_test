@@ -33,7 +33,7 @@ Datasets download links:
 
 ### 1.2.1 Dataset Processing
 
-(1)  First, download the HRSC2016 dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it to the data folder.
+(1)  First, download the HRSC2016 dataset from https://www.kaggle.com/datasets/guofeng/hrsc2016. Please download the compressed archive and extract it to the `data` folder.
 
 Then, save the dataset path to HRSC_ROOT and run the following command in the terminal.
 

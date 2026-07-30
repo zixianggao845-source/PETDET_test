@@ -97,7 +97,7 @@ The output is written to:
 work_dirs/CEGA_DOTA_test/
 ```
 
-DOTA Official Evaluation: Visit http://bed4rs.net:8001/login/?next=/evaluation1/ and log in with your account. Upload the Task1 submission archive to the official evaluation platform. The evaluation results will be available on the website after a few minutes.
+DOTA Official Evaluation: Visit http://bed4rs.net:8001/login/?next=/evaluation1/ and log in with your account. Upload the Task1 submission archive to the official evaluation platform. The evaluation results will be sent to the registered email address associated with your account within a few minutes.
 
 Results in HRSC2016 are shown as follow:
 

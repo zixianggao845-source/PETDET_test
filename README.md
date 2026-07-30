@@ -45,8 +45,7 @@ export HRSC_ROOT=/data/HRSC2016
 
 (2) DOTA v1.0 Dataset
 
-First, download the DOTA v1.0 (Split) dataset from https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew.
-After downloading all .part_* files from Baidu Netdisk, place them in the same directory and merge them into the original archive using:
+First, download the DOTA v1.0 (segmentation) dataset from the following Baidu Netdisk link: https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew. After downloading the `.part_00`–`.part_11` files, place them in the same directory and merge them into the original archive using the following procedure.
 
 ```bash
 cat CEGA_DOTA_split_1024_dota1_0.tar.zst.part_* > CEGA_DOTA_split_1024_dota1_0.tar.zst

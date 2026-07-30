@@ -21,7 +21,7 @@ mmrotate == 0.3.2
 
 ## 1.2 Dataset
 
-To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.HRSC_ROOT and DOTA_ROOT are only environment variables. 
+First, click https://github.com/zixianggao845-source/PETDET_test to access the repository homepage. Click the download button to download the PETDET_test.zip. Then, extract PETDET_test.zip to obtain the PETDET_test folder. 
 
 Datasets download links:
 
@@ -31,7 +31,7 @@ Datasets download links:
 | DOTA v1.0 (Split) | https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew |
 | DOTA v1.0 | https://captain-whu.github.io/DOTA/dataset.html |
 
-### 1.2.1 Dataset Processing
+### 1.2.1 Dataset
 
 (1) HRSC2016 Dataset
 
@@ -39,13 +39,13 @@ First, click https://www.kaggle.com/datasets/guofeng/hrsc2016 and then click the
 
 (2) DOTA v1.0 Dataset
 
-First, download the DOTA v1.0 (Split) dataset from the following Baidu Netdisk link: https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew. After downloading the .part_00–.part_11 files, place them in the same directory and merge them into the original archive using the following procedure.
+First, download the DOTA v1.0 (Split) dataset from the following Baidu Netdisk link: https://pan.baidu.com/s/1RMn76fktv1AmRB7kLlBmew. Download the CEGA_DOTA_split_1024_dota1_0.part_00 ,CEGA_DOTA_split_1024_dota1_0.part_01 ,..., CEGA_DOTA_split_1024_dota1_0.part_11 files and merge them into the original archive using the following procedure.
 
 ```bash
 cat CEGA_DOTA_split_1024_dota1_0.tar.zst.part_* > CEGA_DOTA_split_1024_dota1_0.tar.zst
 ```
 
-Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory and set DOTA_ROOT to the path of the extracted dataset.
+Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory .
 
 ### 1.2.2 Test Experiments
 
@@ -65,7 +65,7 @@ export HRSC_ROOT=/path/to/HRSC2016
 export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```
-Here are the HRSC2016 test results in the picture below:
+Results in HRSC2016 are shown as follow
 
 <img width="407" height="15" alt="image" src="https://github.com/user-attachments/assets/2f8176fe-5dc3-4373-80a0-306efa8e864c" />
 

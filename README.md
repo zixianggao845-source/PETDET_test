@@ -104,7 +104,10 @@ The output is written to:
 ```text
 work_dirs/CEGA_DOTA_test/
 ```
-The DOTA v1.0 test results are shown in the picture below:
+
+DOTA Official Evaluation: Visit http://bed4rs.net:8001/login/?next=/evaluation1/ and log in with your account. Upload the Task1 submission archive to the official evaluation platform. The evaluation results will be available on the website after a few minutes.
+
+DOTA v1.0 local evaluation results are shown in the figure below:
 
 <img width="301" height="19" alt="image" src="https://github.com/user-attachments/assets/f58b1513-fc6a-4db2-bde9-43a874c58878" />
 

@@ -8,7 +8,7 @@ Test: Load the trained models, evaluate CEGA_HRSC.pth on the HRSC2016 dataset, a
 
 ## 1.1 Configure The Environment
 
-Use a PETDet environment with the same core dependencies:
+Use a PETDet environment with the same core dependencies(Install on Linux):
 
 ```text
 python == 3.10
@@ -51,6 +51,14 @@ Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory .
 
 ### 1.2.2 Test Experiments
 
+Copy the complete PETDET_test directory, which includes the HRSC2016 and DOTA-v1.0 datasets, to the root directory of your Linux environment. 
+
+We recommend using WinSCP or FileZilla for file transfer.
+
+Download links:
+
+WinSCP: https://winscp.net/eng/download.php
+FileZilla: https://filezilla-project.org/
 
 | Dataset | Model | Download | Test script | Config | mAP |
 |---|---|---|---|---|---|
@@ -59,7 +67,7 @@ Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory .
 
 (1) HRSC2016 Test
 
-Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:
+Set HRSC_ROOT to the root directory of the HRSC2016 dataset, then run the following commands from the PETDET_test directory in your Linux environment:
 
 ```bash
 mkdir -p work_dirs
@@ -74,7 +82,7 @@ Results in HRSC2016 are shown as follow:
 
 (2) DOTA v1.0 Test
 
-Run validation mAP from the PETDet root:
+Set DOTA_ROOT to the root directory of the DOTA v1.0 dataset, then run the following commands from the PETDET_test directory in your Linux environment:
 
 ```bash
 mkdir -p work_dirs/CEGA_DOTA

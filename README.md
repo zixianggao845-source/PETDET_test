@@ -71,7 +71,7 @@ Set `HRSC_ROOT` to the HRSC2016 dataset root, then run:
 
 ```bash
 mkdir -p work_dirs
-export HRSC_ROOT=/path/to/hrsc
+export HRSC_ROOT=/path/to/HRSC2016
 export CHECKPOINT="$PWD/work_dirs/CEGA_HRSC.pth"
 bash tools/CEGA_HRSC_test.sh
 ```

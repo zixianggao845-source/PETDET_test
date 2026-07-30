@@ -51,7 +51,7 @@ Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory .
 
 ### 1.2.2 Test Experiments
 
-Copy the complete PETDET_test directory, which includes the HRSC2016 and DOTA-v1.0 datasets, to the root directory of your Linux environment. 
+Copy the downloaded PETDET_test directory, which includes the HRSC2016 and DOTA-v1.0 datasets, from your Windows system to the root directory of your Linux system.
 
 We recommend using WinSCP or FileZilla for file transfer.
 
@@ -67,7 +67,7 @@ FileZilla: https://filezilla-project.org/
 
 (1) HRSC2016 Test
 
-Set HRSC_ROOT to the root directory of the HRSC2016 dataset, then run the following commands from the PETDET_test directory in your Linux environment:
+Set HRSC_ROOT to the root directory of the HRSC2016 dataset, then run the following commands from the PETDET_test directory in your Linux system:
 
 ```bash
 mkdir -p work_dirs
@@ -82,7 +82,7 @@ Results in HRSC2016 are shown as follow:
 
 (2) DOTA v1.0 Test
 
-Set DOTA_ROOT to the root directory of the DOTA v1.0 dataset, then run the following commands from the PETDET_test directory in your Linux environment:
+Set DOTA_ROOT to the root directory of the DOTA v1.0 dataset, then run the following commands from the PETDET_test directory in your Linux system:
 
 ```bash
 mkdir -p work_dirs/CEGA_DOTA
@@ -112,7 +112,8 @@ Results in HRSC2016 are shown as follow:
 <img width="301" height="19" alt="image" src="https://github.com/user-attachments/assets/f58b1513-fc6a-4db2-bde9-43a874c58878" />
 
 ## 2 Training Experiments
-To obtain the code, click the Code button on the repository homepage and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, train the model on the HRSC2016 and DOTA v1.0 datasets.
+Copy the downloaded PETDET_test directory, which includes the HRSC2016 and DOTA-v1.0 datasets, from your Windows system to the root directory of your Linux system.
+ Then, train the model on the HRSC2016 and DOTA v1.0 datasets.
 | Dataset | PETDet training config | Main setting |
 |---|---|---|
 | HRSC2016 | `PETDet/experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py` | CEGA parallel branch, ACL-RPN, StripHead, 72 epochs |
@@ -121,7 +122,7 @@ To obtain the code, click the Code button on the repository homepage and select 
 ### 2.2.1 Dataset Processing
 The dataset preparation follows the same procedure as described in Section 1.2.1.
 
-Note: If you prefer to split the DOTA v1.0 dataset into patches yourself, please download the original dataset from https://captain-whu.github.io/DOTA/dataset.html, then use the following code to perform the splitting, and set the DOTA_ROOT path variable accordingly.
+Note: If you prefer to split the DOTA v1.0 dataset into patches yourself, please download the original DOTA v1.0 dataset from https://captain-whu.github.io/DOTA/dataset.html, then use the following code to perform the splitting in Linux system, and set the DOTA_ROOT path variable accordingly.
 
 ```bash
 python tools/data/dota/split/img_split.py \
@@ -133,7 +134,7 @@ python tools/data/dota/split/img_split.py \
 ### 2.2.2 Training The Model
 (1) HRSC2016 Training
 
-Run from the PETDet root:
+Run the following commands from the PETDET_test directory in your Linux system:
 
 ```bash
 python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_hrsc.py --seed 3407
@@ -143,7 +144,7 @@ If your dataset path is different from the path in the config, update the config
 
 (2) DOTA v1.0 Training
 
-Run from the PETDet root:
+Run the following commands from the PETDET_test directory in your Linux system:
 
 ```bash
 python tools/train.py experiments/ablation/serial_rot_scale_aclrpn_striphead_dota.py --seed 332845056

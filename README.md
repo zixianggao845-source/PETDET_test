@@ -21,7 +21,7 @@ mmrotate == 0.3.2
 
 ## 1.2 Dataset and Code Preparation
 
-To obtain the testing code, navigate to the repository homepage, click the Code button, and select Download ZIP. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.HRSC_ROOT and DOTA_ROOT are only environment variables. 
+To obtain the testing code, navigate to the repository homepage, click the Code button, and select`Download ZIP`. After downloading, extract the archive and install the required interpreter packages as described above. Then, test the model on the HRSC2016 and DOTA v1.0 datasets.HRSC_ROOT and DOTA_ROOT are only environment variables. 
 
 Datasets download links:
 

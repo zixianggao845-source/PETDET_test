@@ -51,7 +51,7 @@ First, download the DOTA v1.0 (Split) dataset from the following Baidu Netdisk l
 cat CEGA_DOTA_split_1024_dota1_0.tar.zst.part_* > CEGA_DOTA_split_1024_dota1_0.tar.zst
 ```
 
-Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the data directory and set DOTA_ROOT to the path of the extracted dataset.
+Then, extract CEGA_DOTA_split_1024_dota1_0.tar.zst into the /data directory and set DOTA_ROOT to the path of the extracted dataset.
 
 ```bash
 export DOTA_ROOT=data/CEGA_DOTA_split_1024_dota1_0

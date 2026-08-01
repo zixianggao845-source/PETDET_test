@@ -1,6 +1,6 @@
 #  PETDET 
 
-This repository provides testing and training documentation for the project. Currently, it includes the model and test programs; the complete training experiment files have not yet been incorporated and will be uploaded together with the training code during the paper revision stage.
+PETDET_test provides testing and training documentation. Currently, the training experiment files are incomplete, without the re_resnet.py, scale_re_resnet.py, and acl_rnp_head.py modules, which will be uploaded during the paper revision stage.
 
 # 1 Test
 
